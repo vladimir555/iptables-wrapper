@@ -65,6 +65,10 @@ class Firewall():
             for profile in profile_list:
                 profile = profile.value
                 self.iptables.forward(interface_out, i, profile[Protocol], profile["dst_port"])
+                
+    def rerouteHTTPToTransparentProxy(self, interface_list):
+        for i in interface_in_list:
+            iptables.rerouteHTTPToTransparentProxy(i, Profile.Proxy["dst_port"])
 
     def allowICMP(self, interface_list):
         for i in interface_list:
