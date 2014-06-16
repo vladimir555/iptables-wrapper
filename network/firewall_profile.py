@@ -25,7 +25,7 @@ class Profile(Enum):
     TransmissionGUI = {Protocol: [Protocol.TCP], "dst_port": [9091]}
     Proxy           = {Protocol: [Protocol.TCP], "dst_port": [3128]}
     Linphone        = {Protocol: [Protocol.TCP], "dst_port": [5060]}
-    
+
 
 class Firewall():
     

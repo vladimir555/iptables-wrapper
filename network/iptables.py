@@ -183,7 +183,7 @@ class IPTables():
         executeShellCommand("iptables -A  INPUT -p tcp --tcp-flags SYN,ACK SYN,ACK -m state --state NEW -j REJECT --reject-with tcp-reset")
         
     def enableSequrityUnknownStatusPackets(self):
-        executeShellCommand("iptables -A  INPUT -m state --state INVALID -j DROP")
+        executeShellCommand("iptables -A  INPUT  -m state --state INVALID -j DROP")
         executeShellCommand("iptables -A FORWARD -m state --state INVALID -j DROP")
 
     def enableSequritySynFlood(self):
