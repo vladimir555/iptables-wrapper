@@ -14,7 +14,7 @@ class Profile(Enum):
     Quake3          = {Protocol: [Protocol.UDP], "dst_port": [27960]}
     Authorization   = {Protocol: [Protocol.UDP], "dst_port": [113]}
     DNS             = {Protocol: [Protocol.UDP], "dst_port": [53]}
-    DHCP            = {Protocol: [Protocol.UDP], "dst_port": 68,        "src_port": 67}
+    DHCP            = {Protocol: [Protocol.UDP], "dst_port": 67,        "src_port": 68}
     NTP             = {Protocol: [Protocol.UDP], "dst_port": 123,       "src_port": 123}
     NFS             = {Protocol: [Protocol.TCP], "dst_port": 2049,      "src_port": "512:1024"}
     Samba           = {Protocol: [Protocol.TCP], "dst_port": 445,       "src_port": "137:139"}
