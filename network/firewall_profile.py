@@ -21,7 +21,7 @@ class Profile(Enum):
     SSH             = {Protocol: [Protocol.TCP], "dst_port": [22]}
     HTTP            = {Protocol: [Protocol.TCP], "dst_port": [80]}
     HTTPS           = {Protocol: [Protocol.TCP], "dst_port": [443]}
-    Transmission    = {Protocol: [Protocol.TCP], "dst_port": ["65500:65535"]}
+    Transmission    = {Protocol: [Protocol.TCP], "dst_port": ["65500:65535", 51413]}
     TransmissionGUI = {Protocol: [Protocol.TCP], "dst_port": [9091]}
     Proxy           = {Protocol: [Protocol.TCP], "dst_port": [3128]}
     Linphone        = {Protocol: [Protocol.TCP], "dst_port": [5060]}
