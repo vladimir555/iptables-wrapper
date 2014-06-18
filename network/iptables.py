@@ -5,7 +5,7 @@ Created on 01 июня 2014 г.
 '''
 
 
-from network.utility    import executeShellCommand
+from utility.shell      import executeShellCommand
 from network.interface  import Interface
 from enum               import Enum, unique
 

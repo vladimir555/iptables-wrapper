@@ -5,11 +5,9 @@ Created on 05 июня 2014 г.
 @author: volodja
 '''
 
-#iptables_config = open('iptables.rules.1').readlines()
-#iptables_rules  = open('iptables.config.1').readlines()
+iptables_config = open('iptables.rules.1').readlines()
+iptables_rules  = open('iptables.config.1').readlines()
 
-iptables_config = open('1').readlines()
-iptables_rules  = open('2').readlines()
 
 for rules_line in iptables_rules:
     rules = rules_line.strip()

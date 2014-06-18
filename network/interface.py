@@ -5,7 +5,7 @@ Created on 31 мая 2014 г.
 '''
 
 
-from network.utility import executeShellCommand
+from utility.shell import executeShellCommand
 
 
 class Interface():
