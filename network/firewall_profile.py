@@ -19,13 +19,14 @@ class Profile(Enum):
     NFS             = [{Protocol: [Protocol.TCP], "dst_port": 2049,      "src_port": "512:1024"}]
     Samba           = [{Protocol: [Protocol.TCP], "dst_port": ["137:139", 445]}]
     SSH             = [{Protocol: [Protocol.TCP], "dst_port": [22]}]
+    GIT             = [{Protocol: [Protocol.TCP], "dst_port": [9418]}]
     HTTP            = [{Protocol: [Protocol.TCP], "dst_port": [80]}]
     HTTPS           = [{Protocol: [Protocol.TCP], "dst_port": [443]}]
     Transmission    = [{Protocol: [Protocol.TCP], "dst_port": ["65500:65535"]}]
     TransmissionIn  = [{Protocol: [Protocol.TCP, Protocol.UDP], "dst_port": [51413]}]
     TransmissionGUI = [{Protocol: [Protocol.TCP], "dst_port": [9091]}]
     Proxy           = [{Protocol: [Protocol.TCP], "dst_port": [3128]}]
-    Linphone        = [{Protocol: [Protocol.TCP], "dst_port": [5060]}]
+    Linphone        = [{Protocol: [Protocol.TCP, Protocol.UDP], "dst_port": [5060, 7078, 9078]}]
 
 
 class Firewall():
